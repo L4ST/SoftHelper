@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="446.0" prefWidth="635.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softhelper.MainSoftHelperController">
+    <children>
+      <AnchorPane layoutX="151.0" layoutY="408.0" opacity="0.33" prefHeight="38.0" prefWidth="330.0" style="-fx-background-color: #1f2021;" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="201.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/icons8_Google_48px.png" />
+         </image>
+         <effect>
+            <Blend mode="SCREEN" opacity="0.98" />
+         </effect>
+      </ImageView>
+      <JFXButton fx:id="googleButton" layoutX="184.0" layoutY="408.0" onAction="#handleButtonAction" opacity="0.0" prefHeight="38.0" prefWidth="47.0" />
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="243.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/icons8_Play_Button_48px_1.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="buttonYT" layoutX="231.0" layoutY="412.0" onAction="#ytButton" opacity="0.0" prefHeight="28.0" prefWidth="47.0" />
+      <ImageView fitHeight="28.0" fitWidth="47.0" layoutX="299.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/icons8_Search_50px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="everything" layoutX="291.0" layoutY="414.0" onAction="#everyButton" opacity="0.0" prefHeight="25.0" prefWidth="38.0" />
+      <Label alignment="CENTER" layoutX="54.0" layoutY="137.0" prefHeight="25.0" prefWidth="213.0" text="Strings!" textFill="#dadada">
+         <font>
+            <Font name="Roboto Medium" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtString" alignment="CENTER" layoutX="76.0" layoutY="341.0" prefHeight="38.0" prefWidth="171.0" textFill="#a8a8a8">
+         <font>
+            <Font name="Roboto Medium" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="mostrarString" layoutX="90.0" layoutY="286.0" onAction="#ActionClickTesting" opacity="0.7" prefHeight="49.0" prefWidth="142.0" style="-fx-background-color: D500F9;" text="Show string" textFill="#dadada">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="311.0" layoutY="148.0" opacity="0.49" orientation="VERTICAL" prefHeight="212.0" prefWidth="21.0" />
+      <Label fx:id="Bypasslabel" alignment="CENTER" layoutX="387.0" layoutY="137.0" prefHeight="49.0" prefWidth="142.0" text="Bypass!" textFill="#dadada">
+         <font>
+            <Font name="Roboto Medium" size="40.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="mostrarString1" layoutX="387.0" layoutY="286.0" onAction="#bypassButton" opacity="0.7" prefHeight="49.0" prefWidth="142.0" style="-fx-background-color: D500F9;" text="ClearStrings" textFill="#dadada">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="338.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/anydesk.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="buttonAnyDesk" layoutX="329.0" layoutY="412.0" onAction="#anyDesk" opacity="0.0" prefHeight="28.0" prefWidth="47.0" />
+      <ImageView fitHeight="28.0" fitWidth="43.0" layoutX="387.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/ProcessHacker200-175.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="buttonPH" layoutX="376.0" layoutY="412.0" onAction="#processHacker" opacity="0.0" prefHeight="28.0" prefWidth="38.0" />
+      <ImageView fitHeight="88.0" fitWidth="226.0" layoutX="209.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/mcry.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtClient" alignment="CENTER" focusColor="#b90391" layoutX="69.0" layoutY="204.0" opacity="0.85" prefHeight="38.0" prefWidth="183.0" promptText="client name" unFocusColor="#b90391">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+    </children>
+</AnchorPane>
